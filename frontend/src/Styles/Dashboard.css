@@ -1,0 +1,133 @@
+
+  .Dashboard {
+    display: flex;
+    height: 100vh;
+    
+  }
+
+ 
+
+  .navbar {
+
+  
+    background: linear-gradient(#19105b, #472067, #7c3375, #FF6196);
+    width: 150px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 12.5px;
+    padding: 20px; /* Add padding as needed */
+
+  }
+
+ 
+
+  .main {
+    flex: 1;
+    background-color: #fff; /* Set a background color for the right side */
+    padding: 20px; /* Add padding as needed */
+  }
+.Header img {
+    max-width: 50px; /* Set the maximum width of the image */
+    height: auto; /* Maintain the image's aspect ratio */
+    border-radius: 50%; /* Add a border-radius to make it round (optional) */
+    padding-left: 10px;
+  }
+  
+  
+ 
+  .body {
+    flex: 1;
+    margin-left: 15px;
+  }
+  
+  .Optionlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Optionlist li {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+  
+  /* Add styles for images, Name, and button as needed */
+  .footer img {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    transform: translateY(-5px);
+    background-color: white;
+    border-radius: 50%; 
+  }
+
+  .footer .Name{
+    transform: translateX(-2px);
+  }
+
+  .footer span:hover{
+    cursor: pointer;
+  }
+
+  .LogoutIcon {
+    font-size: 15px; 
+    margin-left: 10px; 
+    cursor: pointer; 
+    color: white; 
+  }
+/* Add this to your existing CSS */
+
+/* Mobile-first approach: Styles for smaller screens */
+/* @media (max-width: 768px) {
+  .Dashboard {
+    flex-direction: column; 
+  }
+
+  .navbar {
+    width: 100%; 
+  }
+
+  .body {
+    margin-left: 0; 
+  }
+} */
+/* Add this to your existing CSS */
+
+/* Mobile-first approach: Styles for smaller screens */
+@media (max-width: 768px) {
+  .Dashboard {
+    flex-direction: column; 
+  }
+
+  .navbar {
+    width: 100%; 
+    display: none; /* Hide the menu by default on smaller screens */
+  }
+
+  .menu-visible .navbar {
+    display: flex; /* Show the menu when menuVisible state is true */
+  }
+
+  .body {
+    margin-left: 0; 
+  }
+
+  .menu-toggle {
+    display: block; /* Show the hamburger icon */
+  }
+}
+
+/* Styles for larger screens */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* Hide the hamburger icon */
+  }
+}

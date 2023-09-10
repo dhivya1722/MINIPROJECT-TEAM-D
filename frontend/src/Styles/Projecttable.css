@@ -1,0 +1,102 @@
+/* Style for the table inside the accordion */
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.project-table th,
+.project-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.project-table th {
+  background-color: #f2f2f2;
+}
+
+/* Style for alternating row colors */
+.project-table tr:nth-child(even) {
+  background-color: #e0e0e0; /* Change this color as needed */
+}
+
+/* Additional styles for table headers, if needed */
+.project-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Add any other table-related styles here */
+
+  
+  /* Style for the row color */
+  .row-highlight {
+    background-color: #e0e0e0; /* You can change this color as needed */
+  }
+
+  .header{
+    background-color: #19105b;
+    width:100%;
+    height:40px;
+    color:white;
+    padding:5px
+  }
+
+
+
+.expand-icon {
+    color: white;
+  }
+
+
+  .Project{
+    margin-top: 100px;
+    margin-left: 4%;
+    width: 160%;
+  }
+  .accordion-container{
+    position: static;
+  }
+
+  /* Add responsive styles for small screens */
+@media (max-width: 768px) {
+  .Project {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .accordion-container {
+    position: static;
+  }
+  
+  .project-table {
+    font-size: 12px; /* Reduce font size for better mobile readability */
+  }
+  
+  .header {
+    font-size: 14px; /* Increase font size for better mobile readability */
+  }
+  
+  .expand-icon {
+    font-size: 24px; /* Increase the expand icon size for touch targets */
+  }
+  
+  .row-highlight {
+    background-color: transparent; /* Remove row background color for better mobile appearance */
+  }
+}
+/* Add this inside your Projecttable.css */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .project-table {
+    font-size: 12px; /* Decrease font size for smaller screens */
+    table-layout: auto; /* Allow the table to be horizontally scrollable */
+  }
+
+  .project-table th,
+  .project-table td {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+}

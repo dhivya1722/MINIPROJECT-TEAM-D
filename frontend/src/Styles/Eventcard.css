@@ -1,0 +1,81 @@
+/* Eventcard.css */
+
+.container-wrapper {
+  width: 40%;
+  margin: 0 auto;
+  /* padding: 10px; */
+  margin-left: 15px;
+  border: 1px solid #151515; 
+  border-radius: 10px;
+  
+}
+
+.headers {
+  background-color: #19105b;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #151515;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 40%;
+  
+}
+
+.container strong {
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Updated button styles */
+button {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 40%; 
+  margin-left: 20px;
+  background-color: #FF6196;
+}
+
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+@media (max-width: 768px) {
+  .container-wrapper,
+  .container {
+    width: 90%; /* Adjust the width for smaller screens */
+  }
+
+  /* Center align the container */
+  .container-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Adjust button styles for smaller screens */
+  button {
+    width: 100%; /* Make buttons full-width on small screens */
+    margin-left: 0; /* Remove margin for the buttons */
+    margin-top: 10px; /* Add some spacing between buttons */
+  }
+}
