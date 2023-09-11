@@ -27,7 +27,7 @@ export default function BasicAccordion() {
     
     <div className="accordion-container"  >
       <Accordion className="Project" >
-        <div className='header'>
+        <div className='project_header'>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon  className="expand-icon"  />}
             aria-controls="panel1a-content"
