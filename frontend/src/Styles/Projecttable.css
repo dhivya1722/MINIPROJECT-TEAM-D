@@ -40,7 +40,7 @@
 }
 
 .Project {
-  width: 90%;
+  width: 200%;
 }
 
 .accordion-container {
@@ -52,7 +52,7 @@
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
   .Project {
-    width: 100%;
+    width: 200%;
   }
 
   .accordion-container {
